@@ -7,6 +7,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HubComponent } from './hub/hub.component';
+import { Ten12Component } from './ten12/ten12.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HubComponent } from './hub/hub.component';
     SidebarComponent,
     TopbarComponent,
     HomepageComponent,
-    HubComponent
+    HubComponent,
+    Ten12Component
   ],
   imports: [
     BrowserModule,

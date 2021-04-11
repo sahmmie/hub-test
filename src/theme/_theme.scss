@@ -130,3 +130,12 @@ body,
         display: block;
     }
 }
+
+@media (max-width: $mobile-width) {
+    .di-sm-none {
+        display: none !important;
+    }
+    .di-sm-block {
+        display: block !important;
+    }
+}
