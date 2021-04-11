@@ -1,0 +1,55 @@
+@import '../variables';
+@import '../mixins/mixins';
+.accordion-container {
+    .text {
+        color: var(--color);
+    }
+    .bordered {
+        border-bottom: 0.1px solid $medium-grey;
+    }
+    .accordion {
+        width: 100%;
+        border: none;
+        text-align: left;
+        float: left;
+        outline: none;
+        transition: 0.2s;
+    }
+    button {
+        background-color: var(--background-color);
+        position: relative;
+    }
+    .active,
+    .accordion:hover div {
+        color: var(--app-dark-green);
+        color: $dark-green;
+        font-weight: 500;
+    }
+    .accordion:after {
+        // todo: add svg back
+        // content: url('assets/custom-icons/a-down-turn.svg');
+        color: $dark-green;
+        font-family: var(--font-family);
+        font-size: rem(18);
+        font-weight: 500;
+        line-height: rem(24);
+        font-weight: bold;
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .active:after {
+        // todo: add svg back
+        // content: url('assets/custom-icons/a-chevron-up.svg');
+        margin-top: 0;
+        height: auto;
+        width: auto;
+    }
+    .panel {
+        max-height: 0;
+        height: auto;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+}

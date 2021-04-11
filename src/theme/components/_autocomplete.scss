@@ -1,0 +1,71 @@
+@import '../variables.scss';
+@import '../mixins/mixins';
+.itg {
+    app-autocomplete {
+        --border-radius: 4px 4px 0 0;
+        border-radius: 4px 4px 0 0;
+        item {
+            overflow: visible;
+            &:not(.item-has-focus) {
+                auto-complete {
+                    ul {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .loading-spinner {
+            position: absolute;
+            right: rem(6);
+            bottom: rem(6);
+            z-index: 3;
+        }
+        auto-complete {
+            width: 100%;
+            input.native-input {
+                border: none;
+            }
+            input {
+                input,
+                input.native-input {
+                    --padding-end: 40px;
+                }
+            }
+            ul {
+                width: 100%;
+                left: 0;
+                top: 100%;
+                z-index: 3;
+                li span {
+                    pointer-events: none;
+                }
+            }
+            &.enable-scroll {
+                ul {
+                    max-height: rem(640);
+                    overflow-y: scroll;
+                    &::-webkit-scrollbar {
+                        -webkit-appearance: none;
+                        display: block;
+                    }
+                    &::-webkit-scrollbar:vertical {
+                        width: rem(8);
+                    }
+                    &::-webkit-scrollbar:horizontal {
+                        height: rem(8);
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        width: rem(5);
+                        border-radius: rem(3);
+                        border: rem(1.5) solid white;
+                        background-color: rgb(66, 66, 66, 0.5);
+                    }
+                    &::-webkit-scrollbar-track {
+                        background-color: #fff;
+                        border-radius: rem(8);
+                    }
+                }
+            }
+        }
+    }
+}
