@@ -8,6 +8,7 @@ import { TopbarComponent } from './topbar/topbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HubComponent } from './hub/hub.component';
 import { Ten12Component } from './ten12/ten12.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Ten12Component } from './ten12/ten12.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,48 @@
+<div class="top_bar_wrapper">
+  <div class="top_bar bg_app_light flex_x_betwwen">
+    <div class="brand">
+      <h6 class="weight_600 text_app_secondary mb-0">Welcome to SellersHub</h6>
+    </div>
+    <div class="user d-flex align-items-center text_app_black">
+      <mat-icon class="icon_sm mr-3" matBadge="15" matBadgeColor="warn"
+        >notifications</mat-icon
+      >
+    </div>
+  </div>
+</div>
+
+<div class="sidebar">
+  <div class="sidebar__logo text-center">
+    <img src="../../../assets/images/store-profile.png" alt="" />
+    <p>Saint Morris & Sons hoodlums Store</p>
+    <button class="btn rounded bg_app_primary text-white">Visit Store</button>
+  </div>
+  <div class="sidebar__menu">
+    <li class="text-right w-100 mobile">
+      <i class="fas fa-bars text-white cursor" (click)="toggleMenu()"></i>
+    </li>
+    <li
+      *ngFor="let item of menu"
+      class="font_14 d-flex align-items-center"
+      (click)="mobile_menu = false"
+      [routerLink]="[item?.path]"
+      routerLinkActive="router_active"
+    >
+      <mat-icon class="icon_sm mr-3">{{ item?.icon }}</mat-icon>
+      <span>{{ item?.title }}</span>
+    </li>
+
+    <li class="font_14 d-flex align-items-center text-white">
+      <mat-icon class="icon_sm mr-3 text_app_primary"
+        >power_settings_new</mat-icon
+      >
+      <span>Logout</span>
+    </li>
+  </div>
+</div>
+
+<div class="main bg_app_outlet">
+  <div class="outlet">
+    <router-outlet></router-outlet>
+  </div>
+</div>

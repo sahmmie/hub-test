@@ -1,0 +1,28 @@
+@import "../../../theme/mixins/mixins";
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    width: 22%;
+    background: #fff;
+    min-height: 112px;
+    padding: 24px 32px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    @include responsive(width, 100%, ipad);
+    img {
+      @include image_size(64px, 64px);
+      margin-right: 1rem;
+    }
+    h6 {
+      font-weight: bold;
+    }
+    p {
+      color: #727272;
+      font-size: 16px;
+    }
+  }
+}
