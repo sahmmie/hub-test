@@ -15,14 +15,15 @@
     @include responsive(width, 100%, ipad);
     img {
       @include image_size(64px, 64px);
-      margin-right: 1rem;
+      margin-right: 0.8rem;
     }
     h6 {
       font-weight: bold;
     }
     p {
       color: #727272;
-      font-size: 16px;
+      font-size: 14px;
+      margin-bottom: 0;
     }
   }
 }

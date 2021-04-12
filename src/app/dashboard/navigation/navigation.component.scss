@@ -27,9 +27,6 @@ $pageSize: 15rem;
   right: 0;
   left: 0;
   z-index: 1;
-  &.sidebarResized {
-    padding-left: 5rem;
-  }
 }
 .top_bar {
   padding: 17px 32px;
@@ -39,21 +36,22 @@ $pageSize: 15rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 32px;
   background: #004d47 0% 0% no-repeat padding-box;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  h6 {
+    font-size: 28px;
+  }
 }
 .sidebar {
   position: fixed;
   width: 260px;
   background: #fff;
   top: 0;
-  color: color(primary);
   bottom: 0;
   &__logo {
-    min-height: 8rem;
-    padding: 3rem 2rem;
+    min-height: 176px;
+    padding: 2rem;
     p {
       color: #727272;
     }
@@ -67,7 +65,7 @@ $pageSize: 15rem;
     }
   }
   &__menu {
-    height: calc(100vh - 8rem) !important;
+    height: calc(100vh - 176px) !important;
     overflow-y: auto;
     overflow-x: hidden;
     border-top: 1px solid #fff;
