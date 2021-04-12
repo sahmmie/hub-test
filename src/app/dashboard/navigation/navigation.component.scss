@@ -51,7 +51,12 @@ $pageSize: 15rem;
     @include responsive(display, block, ipad);
   }
 }
-
+.overlay {
+  @include absolute_position(0, 0, 0, 0);
+  z-index: 11;
+  background: rgba(0, 0, 0, 0.4) !important;
+  content: "";
+}
 .sidebar {
   position: fixed;
   width: 260px;

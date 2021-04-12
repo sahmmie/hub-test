@@ -34,26 +34,6 @@
         <h6 class="mb-3">Store/ Product performance</h6>
         <canvas baseChart [datasets]="reports.chartData" [labels]="reports.chartLabels" [options]="chartOptions" [legend]="reports.chartLegend" chartType="line">
     </canvas>
-        <div class="d-flex text-center justify-content-center pt-24 badges-group">
-            <div class="pr-36">
-                <div class="stat-badge bg-green mr-auto ml-auto">
-                    154
-                </div>
-                <p>Product views</p>
-            </div>
-            <div class="pr-36">
-                <div class="stat-badge bg-purple mr-auto ml-auto">
-                    154
-                </div>
-                <p>Store visit</p>
-            </div>
-            <div class="pr-36">
-                <div class="stat-badge bg-orange mr-auto ml-auto">
-                    154
-                </div>
-                <p>Total Traffic</p>
-            </div>
-        </div>
     </div>
     <div class="analytics__card analytics__chats">
         <h6 class="mb-3">Recent buyers</h6>
@@ -90,33 +70,52 @@
                 <img src="../../../assets/icons/edit-square.svg" alt="" /> <br />
             </div>
         </div>
+        <div class="counts">
+            <div class="count-details">
+                <div>
+                    <h6>50</h6>
+                    <p>SUCCESSFUL SALES</p>
+                </div>
+                <div>
+                    <h6>153</h6>
+                    <p>PRODUCTS</p>
+                </div>
+                <div>
+                    <h6>225k</h6>
+                    <p>FOLLOWERS</p>
+                </div>
+            </div>
+        </div>
+        <div class="progress-section">
+            <div class="progress-section__item">
+                <h6>PRODUCT QUALITY:</h6>
+                <div class="progress w-100">
+                    <div class="progress-bar" role="progressbar" style="width: 23%" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>23%</span>
+            </div>
+            <div class="progress-section__item">
+                <h6>DELIVERY RATE:</h6>
+                <div class="progress w-100">
+                    <div class="progress-bar" role="progressbar" style="width: 68%" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>68%</span>
+            </div>
+            <div class="progress-section__item">
+                <h6>COMMUNICATION:</h6>
+                <div class="progress w-100">
+                    <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>89%</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn">Promote store</button>
+            <button class="btn">Open 2 months</button>
+            <button class="btn">visit store</button>
+        </div>
     </div>
     <div class="analytics__table analytics__card">
         <h6>Best selling items</h6>
-
-        <div class="row pt-32">
-            <div class="col-md-6">
-                <div class="box row">
-                    <div class="col-4">
-                        <img src="../../../assets/images/2 air-max-2090-mens-shoe-3pVM46 (2).png" class="img-fluid w-100" alt="">
-                    </div>
-                    <div class="col-8">
-                        <p>Nike Air Max 2090 - Limited Edition 2021</p>
-                        <div class="d-flex">
-                            <div class="">
-                                <p>Sold</p>
-                                <p>200,000</p>
-                            </div>
-                            <div class="">
-                                <p>Sold</p>
-                                <p>200,000</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6"></div>
-        </div>
-
     </div>
 </div>
