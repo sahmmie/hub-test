@@ -14,16 +14,14 @@ export class NavigationComponent implements OnInit {
   user: any;
   name = '';
   menu = [
-    { path: '', icon: 'dashboard', title: 'Dashboard' },
-    { path: 'sponsor', icon: 'supervised_user_circle', title: 'Add Product' },
-    { path: 'staff', icon: 'admin_panel_settings', title: 'order' },
-    { path: 'visitors', icon: 'people_outline', title: 'Messages' },
-    { path: 'delegates', icon: 'supervisor_account', title: 'Delegates' },
-    { path: 'exhibitors', icon: 'supervised_user_circle', title: 'Exhibitors' },
-    { path: 'communications', icon: 'message', title: 'Manage Products' },
-    { path: 'activity-log', icon: 'event_note', title: 'Coupon' },
-    { path: 'reports', icon: 'feed', title: 'Adsvertise' },
-    { path: 'resource-managememt', icon: 'web_asset', title: 'Settings' },
+    { path: '', icon: '../../../assets/icons/icon - home.svg', title: 'Dashboard' },
+    { path: 'sponsor', icon: '../../../assets/icons/icon - home.svg', title: 'Add Product' },
+    { path: 'staff', icon: '../../../assets/icons/icon - order.svg', title: 'order' },
+    { path: 'visitors', icon: '../../../assets/icons/icon - home.svg', title: 'Messages' },
+    { path: 'communications', icon: '../../../assets/icons/icon - products.svg', title: 'Manage Products' },
+    { path: 'activity-log', icon: '../../../assets/icons/icon - coupon.svg', title: 'Coupon' },
+    { path: 'reports', icon: '../../../assets/icons/icon - advertise.svg', title: 'Adsvertise' },
+    { path: 'resource-managememt', icon: '../../../assets/icons/icon - settings.svg', title: 'Settings' },
   ];
   constructor(
   ) { }
