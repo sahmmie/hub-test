@@ -245,3 +245,10 @@ p {
         margin-right: 360px;
     }
 }
+
+@media (max-width: 819px) {
+    .content-center {
+        justify-content: center;
+        display: flex;
+    }
+}
