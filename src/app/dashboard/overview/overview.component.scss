@@ -1,0 +1,56 @@
+@import "../../../theme/mixins/mixins";
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    width: 22%;
+    background: #fff;
+    min-height: 112px;
+    padding: 24px 32px;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    @include responsive(width, 100%, ipad);
+    img {
+      @include image_size(64px, 64px);
+      margin-right: 0.8rem;
+    }
+    h6 {
+      font-weight: bold;
+    }
+    p {
+      color: #727272;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+}
+.analytics {
+  display: flex;
+  justify-content: space-between;
+  h6 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+  }
+  &__card {
+    width: 48%;
+    padding: 24px 24px;
+    @include responsive(width, 100%, ipad);
+    margin-bottom: 1.5rem;
+    background: #fff;
+    min-height: 429px;
+    border-radius: 8px;
+  }
+  &__graph {
+    canvas {
+      width: 100%;
+      background: #f0f0f0;
+      height: inherit !important;
+    }
+  }
+  &__table {
+  }
+}

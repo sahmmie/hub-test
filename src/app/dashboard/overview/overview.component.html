@@ -1,0 +1,57 @@
+<div class="cards">
+  <div class="cards__item">
+    <img src="../../../assets/icons/pending-orders.svg" alt="" />
+    <div>
+      <h6>0</h6>
+      <p>pending Orders</p>
+    </div>
+  </div>
+  <div class="cards__item">
+    <img src="../../../assets/icons/visittors.svg" alt="" />
+    <div>
+      <h6>0</h6>
+      <p>Today’s Visitor</p>
+    </div>
+  </div>
+  <div class="cards__item">
+    <img src="../../../assets/icons/stock.svg" alt="" />
+    <div>
+      <h6>0</h6>
+      <p>Items in Stock</p>
+    </div>
+  </div>
+  <div class="cards__item">
+    <img src="../../../assets/icons/total-sales.svg" alt="" />
+    <div>
+      <h6>0</h6>
+      <p>Total Sales</p>
+    </div>
+  </div>
+</div>
+
+<div class="analytics">
+  <div class="analytics__graph analytics__card">
+    <h6>Store/ Product performance</h6>
+    <canvas
+      baseChart
+      [datasets]="reports.chartData"
+      [labels]="reports.chartLabels"
+      [options]="chartOptions"
+      [legend]="reports.chartLegend"
+      chartType="line"
+    >
+    </canvas>
+  </div>
+  <div class="analytics__card">
+    <h6>Store details</h6>
+  </div>
+</div>
+
+<div class="analytics">
+  <div class="analytics__card">
+    <h6>Best selling items</h6>
+  </div>
+  <div class="analytics__table analytics__card">
+    <h6>Recent buyers</h6>
+  </div>
+</div>
