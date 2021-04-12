@@ -1,87 +1,97 @@
 <div class="cards">
-  <div class="cards__item">
-    <img src="../../../assets/icons/pending-orders.svg" alt="" />
-    <div>
-      <h6>0</h6>
-      <p>pending Orders</p>
+    <div class="cards__item">
+        <img src="../../../assets/icons/pending-orders.svg" alt="" />
+        <div>
+            <h6>0</h6>
+            <p>pending Orders</p>
+        </div>
     </div>
-  </div>
-  <div class="cards__item">
-    <img src="../../../assets/icons/visittors.svg" alt="" />
-    <div>
-      <h6>0</h6>
-      <p>Today’s Visitor</p>
+    <div class="cards__item">
+        <img src="../../../assets/icons/visittors.svg" alt="" />
+        <div>
+            <h6>0</h6>
+            <p>Today’s Visitor</p>
+        </div>
     </div>
-  </div>
-  <div class="cards__item">
-    <img src="../../../assets/icons/stock.svg" alt="" />
-    <div>
-      <h6>0</h6>
-      <p>Items in Stock</p>
+    <div class="cards__item">
+        <img src="../../../assets/icons/stock.svg" alt="" />
+        <div>
+            <h6>0</h6>
+            <p>Items in Stock</p>
+        </div>
     </div>
-  </div>
-  <div class="cards__item">
-    <img src="../../../assets/icons/total-sales.svg" alt="" />
-    <div>
-      <h6>0</h6>
-      <p>Total Sales</p>
+    <div class="cards__item">
+        <img src="../../../assets/icons/total-sales.svg" alt="" />
+        <div>
+            <h6>0</h6>
+            <p>Total Sales</p>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="analytics">
-  <div class="analytics__graph analytics__card">
-    <h6 class="mb-3">Store/ Product performance</h6>
-    <canvas
-      baseChart
-      [datasets]="reports.chartData"
-      [labels]="reports.chartLabels"
-      [options]="chartOptions"
-      [legend]="reports.chartLegend"
-      chartType="line"
-    >
+    <div class="analytics__graph analytics__card">
+        <h6 class="mb-3">Store/ Product performance</h6>
+        <canvas baseChart [datasets]="reports.chartData" [labels]="reports.chartLabels" [options]="chartOptions" [legend]="reports.chartLegend" chartType="line">
     </canvas>
-  </div>
-  <div class="analytics__card analytics__chats">
-    <h6 class="mb-3">Recent buyers</h6>
-    <div class="item" *ngFor="let item of messages">
-      <div class="user">
-        <img [src]="item?.image" alt="" />
-        <div>
-          <h6 class="mb-0">{{ item?.name }}</h6>
-          <p class="mb-0"><span>Product</span>{{ item?.product }}</p>
+        <div class="d-flex text-center justify-content-center pt-24 badges-group">
+            <div class="pr-36">
+                <div class="stat-badge bg-green mr-auto ml-auto">
+                    154
+                </div>
+                <p>Product views</p>
+            </div>
+            <div class="pr-36">
+                <div class="stat-badge bg-purple mr-auto ml-auto">
+                    154
+                </div>
+                <p>Store visit</p>
+            </div>
+            <div class="pr-36">
+                <div class="stat-badge bg-orange mr-auto ml-auto">
+                    154
+                </div>
+                <p>Total Traffic</p>
+            </div>
         </div>
-      </div>
-      <div class="action">
-        <img src="../../../assets/icons/icon - message.svg" alt="" /> <br />
-        <span>Chat Buyer</span>
-      </div>
     </div>
-  </div>
+    <div class="analytics__card analytics__chats">
+        <h6 class="mb-3">Recent buyers</h6>
+        <div class="item" *ngFor="let item of messages">
+            <div class="user">
+                <img [src]="item?.image" alt="" />
+                <div>
+                    <h6 class="mb-0">{{ item?.name }}</h6>
+                    <p class="mb-0"><span>Product</span>{{ item?.product }}</p>
+                </div>
+            </div>
+            <div class="action">
+                <img src="../../../assets/icons/icon - message.svg" alt="" /> <br />
+                <span>Chat Buyer</span>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="analytics">
-  <div class="analytics__card analytics__store">
-    <h6 class="mb-3">Store details</h6>
-    <div class="item">
-      <div class="user">
-        <img src="../../../assets/images/store-profile.png" alt="" />
-        <div>
-          <h6>Saint Morris & Sons hoodlums Store</h6>
-          <p>
-            Hoodlum is a 1997 American crime drama film that gives a
-            fictionalized account of the gang war between the Italian/Jewish
-            mafia alliance and the black gangsters of Harlem that took place in
-            the late 1920s and early 1930s
-          </p>
+    <div class="analytics__card analytics__store">
+        <h6 class="mb-3">Store details</h6>
+        <div class="item">
+            <div class="user">
+                <img src="../../../assets/images/store-profile.png" alt="" />
+                <div>
+                    <h6>Saint Morris & Sons hoodlums Store</h6>
+                    <p>
+                        Hoodlum is a 1997 American crime drama film that gives a fictionalized account of the gang war between the Italian/Jewish mafia alliance and the black gangsters of Harlem that took place in the late 1920s and early 1930s
+                    </p>
+                </div>
+            </div>
+            <div class="action">
+                <img src="../../../assets/icons/edit-square.svg" alt="" /> <br />
+            </div>
         </div>
-      </div>
-      <div class="action">
-        <img src="../../../assets/icons/edit-square.svg" alt="" /> <br />
-      </div>
     </div>
-  </div>
-  <div class="analytics__table analytics__card">
-    <h6>Best selling items</h6>
-  </div>
+    <div class="analytics__table analytics__card">
+        <h6>Best selling items</h6>
+    </div>
 </div>
