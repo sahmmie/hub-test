@@ -8,7 +8,7 @@
     background: #fff;
     min-height: 112px;
     padding: 24px 32px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -30,11 +30,16 @@
 .analytics {
   display: flex;
   justify-content: space-between;
+  h6 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+  }
   &__card {
     width: 48%;
     padding: 24px 24px;
     @include responsive(width, 100%, ipad);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     background: #fff;
     min-height: 429px;
     border-radius: 8px;

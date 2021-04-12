@@ -10,6 +10,18 @@ export class OverviewComponent implements OnInit {
     responsive: true,
     maintainAspectRatio: false,
     scaleShowVerticalLines: true,
+    scales: {
+      x: [{
+        gridLines: {
+          display: false
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          display: true
+        }
+      }],
+    },
     legend: {
       display: false,
       // position: 'bottom',
@@ -20,7 +32,7 @@ export class OverviewComponent implements OnInit {
     }
   };
   reports = {
-    chartLabels: [],
+    chartLabels: ['16', '17', '18', '19', '20', '21', '22', '23', '24'],
     chartType: 'line',
     chartLegend: true,
     chartData: [
