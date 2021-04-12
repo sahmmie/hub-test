@@ -8,7 +8,7 @@ const routes: Routes = [
     component: HubComponent
   },
   {
-    path: 'ten12',
+    path: 'dashboard',
     data: {
       title: 'Dashboard | Hub',
     },
