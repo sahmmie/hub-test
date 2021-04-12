@@ -21,7 +21,7 @@
         </li>
         <li *ngFor="let item of menu" class="font_14 d-flex align-items-center" (click)="mobile_menu = false" [routerLink]="[item?.path]" routerLinkActive="router_active">
             <img [src]="item.icon" class="icon_sm mr-3">
-            <span>{{ item?.title }}</span>
+            <span class="title-bold">{{ item?.title }}</span>
         </li>
 
         <li class="font_14 d-flex align-items-center text-white">
