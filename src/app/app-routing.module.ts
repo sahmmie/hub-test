@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HubComponent } from './hub/hub.component';
+import { Ten12Component } from './ten12/ten12.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HubComponent
+    component: Ten12Component
   },
   {
     path: 'dashboard',
@@ -19,6 +20,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+exports: [RouterModule]
 })
 export class AppRoutingModule { }
