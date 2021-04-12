@@ -1,11 +1,11 @@
 <div class="entire-page">
-    <div class="nav-blur page-pad">
-        <div class="d-flex py-22">
+    <div [ngClass]="{'d-none': fixNav == 'none', 'blur': fixNav == 'blur'}" class="nav-ten page-pad">
+        <div class="d-flex py-12">
             <img class="logo" src="../../assets/images/Sllers-hub-logo.svg" alt="" srcset="">
             <div class="di-sm-none ml-auto">
-                <span class="mr-38 text-white">Ten12 Express</span>
-                <span class="mr-38 text-white">Learning center</span>
-                <button class="text-white btn-reg">Register</button>
+                <span class="mr-38 ">Ten12 Express</span>
+                <span class="mr-38 ">Learning center</span>
+                <button [ngClass]="{'color-black': fixNav == 'blur'}" class=" btn-reg">Register</button>
             </div>
             <div class="d-lg-none ml-auto">
                 ham
@@ -47,7 +47,7 @@
                     <img class="card-image pt-52" src="../../assets/images/start-selling.svg" alt="" srcset="">
                     <h5 class="text-center pt-32">Become a member</h5>
                     <p class="text-center pt-14">Sign up for free on Ten12 and register an account using an email address.</p>
-                </div>>
+                </div>
             </div>
         </div>
 
@@ -118,7 +118,7 @@
                 <div class="col-md-4 no-padding">
                     <img class="my-48 ml-96 seller" src="../../assets/images/seller-obinnapro.png" alt="">
                 </div>
-                <div class="col-md-auto no-padding ">
+                <div class="col-md-8 no-padding ">
                     <div class="store-badge mt-48 text-white px-10 py-6">
                         Store Owner
                     </div>
@@ -139,6 +139,9 @@
                         <div class="dot mr-8 active"></div>
                         <div class="dot mr-8"></div>
                         <div class="dot mr-8"></div>
+                    </div>
+                    <div class="">
+                        <img class="float-right pb-28 pr-28" src="../../assets/images/bxs-right-arrow-circle.svg" alt="">
                     </div>
                 </div>
             </div>
