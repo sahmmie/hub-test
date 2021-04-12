@@ -26,6 +26,7 @@
 .hero-bg {
     background: transparent url('../../assets/images/hero.png') 0% 0% no-repeat padding-box;
     height: 765px;
+    background-position: center;
 }
 
 .btn-reg {
@@ -121,10 +122,9 @@
     max-width: 200px;
 }
 
-.story-card {
-    background: linear-gradient(to left, #ffff 82%, #161616 12%);
-}
-
+// .story-card {
+//     background: linear-gradient(to left, #ffff 82%, #161616 12%);
+// }
 .no-padding {
     padding: unset !important;
 }
@@ -140,8 +140,8 @@
 
 .ring {
     position: absolute;
-    margin-left: -85px;
-    margin-top: -85px;
+    margin-left: -10px;
+    margin-top: -65px;
 }
 
 .mw-500 {
@@ -247,20 +247,29 @@ p {
 
 @media (min-width: 820px) {
     .page-pad {
-        padding-left: 360px;
-        padding-right: 360px;
+        padding-left: 260px;
+        padding-right: 260px;
     }
     .page-margin {
-        margin-left: 360px;
-        margin-right: 360px;
+        margin-left: 260px;
+        margin-right: 260px;
     }
     .page-title {
         font-size: 65px;
         font-weight: 600;
     }
+    .story-card {
+        background: linear-gradient(to left, #ffff 82%, #161616 12%);
+    }
 }
 
 @media (max-width: 819px) {
+    .circle {
+        padding-top: 0px;
+        padding-left: 35px;
+        position: absolute;
+        max-width: 60px;
+    }
     .content-center {
         justify-content: center;
         display: flex;
@@ -279,5 +288,75 @@ p {
     .why-sm {
         padding-left: 32px;
         padding-right: 32px;
+    }
+    .ring {
+        position: absolute;
+        margin-left: -34px;
+        margin-top: -34px;
+    }
+    .story-sm-card {
+        background: linear-gradient(to left, #ffff 50%, #161616 50%);
+    }
+    .text-sm-center {
+        text-align: center;
+    }
+    .pl-sm-12 {
+        padding-left: 12px !important;
+    }
+}
+
+// hamburger
+// styling of hamburger menu
+.hamburger-menu {
+    display: inline-block;
+    height: 100px;
+    padding-top: 12px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        cursor: pointer;
+    }
+    .menu-item {
+        background: white;
+        display: block;
+        height: 1px;
+        margin: 0 0 6px;
+        transition: all 0.3s ease-in-out;
+        width: 25px;
+    }
+    &.open {
+        .menu-item {
+            margin: 0 0 5px;
+            &:first-child {
+                transform: rotate(45deg);
+                transform-origin: 10px;
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+                transform-origin: 8px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1020px) {
+    .page-pad {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .page-margin {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    .mr-md-16 {
+        margin-right: 4px !important;
+    }
+    .line {
+        position: absolute;
+        right: 0;
+        text-align: right;
+        margin-right: 0px;
     }
 }
