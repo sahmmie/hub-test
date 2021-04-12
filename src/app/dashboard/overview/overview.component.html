@@ -28,3 +28,19 @@
     </div>
   </div>
 </div>
+
+<div class="analytics">
+  <div class="analytics__graph analytics__card">
+    <h6>Store/ Product performance</h6>
+    <canvas
+      baseChart
+      [datasets]="reports.chartData"
+      [labels]="reports.chartLabels"
+      [options]="chartOptions"
+      [legend]="reports.chartLegend"
+      chartType="line"
+    >
+    </canvas>
+  </div>
+  <div class="analytics__table analytics__card"></div>
+</div>

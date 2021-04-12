@@ -4,6 +4,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { MaterialModule } from '../material/material.module';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { MaterialModule } from '../material/material.module';
   imports: [
     CommonModule,
     MaterialModule,
+    ChartsModule,
     DashboardRoutingModule
   ]
 })

@@ -27,3 +27,25 @@
     }
   }
 }
+.analytics {
+  display: flex;
+  justify-content: space-between;
+  &__card {
+    width: 48%;
+    padding: 24px 24px;
+    @include responsive(width, 100%, ipad);
+    margin-bottom: 1rem;
+    background: #fff;
+    min-height: 429px;
+    border-radius: 8px;
+  }
+  &__graph {
+    canvas {
+      width: 100%;
+      background: #f0f0f0;
+      height: inherit !important;
+    }
+  }
+  &__table {
+  }
+}

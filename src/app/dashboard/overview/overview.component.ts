@@ -6,7 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./overview.component.scss']
 })
 export class OverviewComponent implements OnInit {
-
+  chartOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    scaleShowVerticalLines: true,
+    legend: {
+      display: false,
+      // position: 'bottom',
+      label: {
+        fontSize: 800,
+        fontColor: '#EA9C28'
+      },
+    }
+  };
+  reports = {
+    chartLabels: [],
+    chartType: 'line',
+    chartLegend: true,
+    chartData: [
+      { data: [50, 35, 150, 20, 20, 128, 100, 80, 20, 75], label: 'Product View', borderColor: '#2AB535', backgroundColor: 'transparent' },
+      { data: [20, 65, 45, 40, 79, 100, 90, 57], label: 'Store visits', borderColor: '#CB1BBD', backgroundColor: 'transparent' },
+    ]
+  };
   constructor() { }
 
   ngOnInit(): void {
