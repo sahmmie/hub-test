@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-navigation',
@@ -15,19 +16,30 @@ export class NavigationComponent implements OnInit {
   name = '';
   menu = [
     { path: '', icon: '../../../assets/icons/icon - home.svg', title: 'Dashboard' },
-    { path: 'sponsor', icon: '../../../assets/icons/icon - home.svg', title: 'Add Product' },
-    { path: 'staff', icon: '../../../assets/icons/icon - order.svg', title: 'order' },
-    { path: 'visitors', icon: '../../../assets/icons/icon - home.svg', title: 'Messages' },
-    { path: 'communications', icon: '../../../assets/icons/icon - products.svg', title: 'Manage Products' },
-    { path: 'activity-log', icon: '../../../assets/icons/icon - coupon.svg', title: 'Coupon' },
-    { path: 'reports', icon: '../../../assets/icons/icon - advertise.svg', title: 'Adsvertise' },
-    { path: 'resource-managememt', icon: '../../../assets/icons/icon - settings.svg', title: 'Settings' },
+    { path: 'product', icon: '../../../assets/icons/icon - home.svg', title: 'Add Product' },
+    { path: 'order', icon: '../../../assets/icons/icon - order.svg', title: 'Order' },
+    { path: 'messages', icon: '../../../assets/icons/icon - home.svg', title: 'Messages' },
+    { path: 'manage', icon: '../../../assets/icons/icon - products.svg', title: 'Manage Products' },
+    { path: 'coupon', icon: '../../../assets/icons/icon - coupon.svg', title: 'Coupon' },
+    { path: 'advertise', icon: '../../../assets/icons/icon - advertise.svg', title: 'Adsvertise' },
+    { path: 'settings', icon: '../../../assets/icons/icon - settings.svg', title: 'Settings' },
   ];
   constructor(
+    private renderer: Renderer2
   ) { }
 
   ngOnInit(): void {
-
+    this.clickOutside();
+  }
+  clickOutside(): void {
+    const self = this;
+    $(document).mouseup((e: any) => {
+      const container = $('.sidebar');
+      // If the target of the click isn't the container
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        self.mobile_menu = false;
+      }
+    });
   }
   toggleMenu(): void {
     this.mobile_menu = !this.mobile_menu;
