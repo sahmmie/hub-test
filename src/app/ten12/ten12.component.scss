@@ -230,8 +230,8 @@ p {
     position: absolute;
     right: 0;
     text-align: right;
-    margin-right: 278px;
-    margin-top: -180px;
+    margin-right: 200px;
+    margin-top: -155px;
     transform: rotateX( 20deg);
 }
 
@@ -250,5 +250,8 @@ p {
     .content-center {
         justify-content: center;
         display: flex;
+    }
+    .mb-sm-30 {
+        margin-bottom: 30px;
     }
 }
