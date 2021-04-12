@@ -34,6 +34,26 @@
         <h6 class="mb-3">Store/ Product performance</h6>
         <canvas baseChart [datasets]="reports.chartData" [labels]="reports.chartLabels" [options]="chartOptions" [legend]="reports.chartLegend" chartType="line">
     </canvas>
+        <div class="d-flex text-center justify-content-center pt-24 badges-group">
+            <div class="pr-36">
+                <div class="stat-badge bg-green mr-auto ml-auto">
+                    154
+                </div>
+                <p>Product views</p>
+            </div>
+            <div class="pr-36">
+                <div class="stat-badge bg-purple mr-auto ml-auto">
+                    154
+                </div>
+                <p>Store visit</p>
+            </div>
+            <div class="pr-36">
+                <div class="stat-badge bg-orange mr-auto ml-auto">
+                    154
+                </div>
+                <p>Total Traffic</p>
+            </div>
+        </div>
     </div>
     <div class="analytics__card analytics__chats">
         <h6 class="mb-3">Recent buyers</h6>
@@ -117,5 +137,28 @@
     </div>
     <div class="analytics__table analytics__card">
         <h6>Best selling items</h6>
+        <div class="row pt-32">
+            <div class="col-md-6">
+                <div class="box row">
+                    <div class="col-4">
+                        <img src="../../../assets/images/2 air-max-2090-mens-shoe-3pVM46 (2).png" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-8">
+                        <p>Nike Air Max 2090 - Limited Edition 2021</p>
+                        <div class="d-flex">
+                            <div class="">
+                                <p>Sold</p>
+                                <p>200,000</p>
+                            </div>
+                            <div class="">
+                                <p>Sold</p>
+                                <p>200,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
     </div>
 </div>
