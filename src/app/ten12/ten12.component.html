@@ -1,7 +1,8 @@
 <div class="entire-page">
     <div [ngClass]="{'d-none': fixNav == 'none', 'blur': fixNav == 'blur'}" class="nav-ten page-pad">
         <div class="d-flex py-12">
-            <img class="logo" src="../../assets/images/Sllers-hub-logo.svg" alt="" srcset="">
+            <img *ngIf="!fixNav || fixNav == 'none'" class="logo" src="../../assets/images/Sllers-hub-logo.svg" alt="" srcset="">
+            <img *ngIf=" fixNav == 'blur'" class="logo" src="../../assets/images/Sllers-hub-logo-black.svg" alt="" srcset="">
             <div class="di-sm-none ml-auto">
                 <span class="mr-38 ">Ten12 Express</span>
                 <span class="mr-38 ">Learning center</span>
@@ -60,7 +61,7 @@
         <div class="diagonal-box">
             <div class="diagonal-content page-margin pt-128 text-center why-choose ml-auto mr-auto">
                 <h5 class="text-center">Why choose Ten12</h5>
-                <p class="text-center pt-16 font-small">
+                <p class="text-center pt-16 font-small why-sm grey-text">
                     Ten12 provides the right platform for sellers to promote their brand and store online, allowing them to have personalized interaction with potential buyers.
                 </p>
             </div>

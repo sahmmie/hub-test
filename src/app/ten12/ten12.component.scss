@@ -197,21 +197,8 @@ p {
     position: absolute;
 }
 
-.ring {
-    // font-size: 130px;
-    // display: inline-block;
-    // width: 130px;
-    // box-sizing: content-box;
-    // height: 130px;
-    // border: 0.1em solid red;
-    position: absolute;
-    margin-left: -85px;
-    margin-top: -85px;
-    // border-radius: 50%;
-    // margin-top: -80px;
-    // margin-right: -80px;
-    // margin-bottom: -80px;
-    // margin-left: -80px;
+.grey-text {
+    color: #727272;
 }
 
 .z-index-99 {
@@ -253,5 +240,17 @@ p {
     }
     .mb-sm-30 {
         margin-bottom: 30px;
+    }
+    .page-pad {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .page-margin {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .why-sm {
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
