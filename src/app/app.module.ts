@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HubComponent } from './hub/hub.component';
@@ -13,7 +12,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent,
     TopbarComponent,
     HomepageComponent,
     HubComponent,
