@@ -8,6 +8,11 @@
     width: 100%;
 }
 
+.hero-bg {
+    background: transparent url('../../assets/images/hero.png') 0% 0% no-repeat padding-box;
+    height: 765px;
+}
+
 .btn-reg {
     border: 1px solid #FFFFFF;
     border-radius: 28px;
@@ -30,8 +35,8 @@
 }
 
 .page-margin {
-    padding-left: 360px;
-    padding-right: 360px;
+    margin-left: 360px;
+    margin-right: 360px;
 }
 
 .img-text {
@@ -52,4 +57,48 @@
 
 .mw-383 {
     max-width: 383px;
+}
+
+.entire-page {
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+}
+
+.tCard {
+    width: 360px;
+    height: 350px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+}
+
+.card-image {
+    // max-width: 100px;
+    // max-height: 100px;
+}
+
+.diagonal-box {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    transform: skewY(-3deg);
+    min-height: 1268px;
+}
+
+.diagonal-content {
+    width: 100%;
+    margin: 0 auto;
+    transform: skewY(3deg);
+}
+
+.why-choose {
+    max-width: 618px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.choose-icon {
+    border-radius: 50%;
+    background: #02796F 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 10px #02020219;
+    height: fit-content;
 }
